@@ -11,7 +11,7 @@ public class TugasParkir24 {
             jenis = sc.nextInt();
 
             if (jenis == 1 || jenis == 2) {
-                System.out.print(Masukkan durasi parkir (jam): );
+                System.out.print("Masukkan durasi parkir (jam): ");
                 durasi = sc.nextInt();
 
                 if (jenis == 1) {
