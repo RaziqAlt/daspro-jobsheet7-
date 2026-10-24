@@ -23,7 +23,24 @@ public class TugasBioskop24 {
                 break;
             }
 
+            double diskon = 0;
+            if ( jumlahTiket > 10 ) {
+                diskon = 0.15;
+            } else if (jumlahTiket > 4) {
+                    diskon = 0.10;
+                }
+                double total = jumlahTiket * Harga_Tiket * (1-diskon);
+                System.out.println("Diskon: " + (int) (diskon * 100) + "%");
+                System.out.println ("Total bayar pelanggan: Rp " + (long) total);
+
+                totalTiket += jumlahTiket;
+                totalPenjualan += total;
             
+            
+            System.out.println("Total tiket terjual: " + totalTiket);
+            System.out.println("Total penjualan hari ini: Rp " + (long) totalPenjualan);
+
+            sc.close();
         }
     }
 }
